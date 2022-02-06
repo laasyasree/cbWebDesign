@@ -7,8 +7,7 @@
 
   <div>
   <input type="radio" id="0" v-model="role" name="role" value="Admin"> <label for="0">
-  <span><b>Admin</b> </span> 
-  </label><br>
+  <span><b>Admin</b> </span> </label><br>
   </div>
 
   <div>
@@ -60,8 +59,6 @@ h1{
 
 </style>
 
-
-
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
 
@@ -75,21 +72,15 @@ export default class edit extends Vue {
   mounted() {
     this.members = this.$store.getters.getAllMembers;
   }
-
   computed() {
     this.members = this.$store.getters.getAllMembers;
   }
-  
   cancel() {
-        this.$router.push('/');
-      }
-  
+    this.$router.push('/');
+  }
   update() {
-      //alert(this.name);
-      this.$store.commit('updateRole', this.role );
-      this.$router.push('/');
-      }
-
-  
+    this.$store.commit('updateRole', this.role);
+    this.$router.push('/');
+  }
 }
 </script>

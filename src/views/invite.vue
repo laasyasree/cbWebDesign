@@ -1,8 +1,7 @@
 <template>
   <div id="invite">
     <div id="card">
-  <h1> 
-         <br>Invite a team member to use Chargebee
+  <h1> <br>Invite a team member to use Chargebee
     </h1>
   <h5>
 You can either let your team members access everything in this site,or assign specific roles to them
@@ -64,19 +63,15 @@ You can either let your team members access everything in this site,or assign sp
   float: center;
   }
 
-
 #card{
   background-color: lavender;
   width: 80%;
   height: 500px;
-  
 h1{
   padding-top: 0px;
 }
 }
 </style>
-
-
 <script>
 import { Component, Vue } from 'vue-property-decorator';
 
