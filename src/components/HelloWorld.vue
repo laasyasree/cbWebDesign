@@ -5,8 +5,9 @@
       <p id="box" v-for="(i,index) in members" v-bind:key="index">
        <br> {{ i.name }} ({{ i.role }})
         <input type="button" id="remove" @click='remove(index)' value="Remove">
-       <router-link to="/edit"><input type="button" id="edit" @click="send(index)" value="Edit"></router-link>
-    <!-- </ul> --> <br> {{ i.mail }} {{ i.mailID }} 
+       <router-link to="/edit">
+       <input type="button" id="edit" @click="send(index)" value="Edit">
+       </router-link><br>{{ i.mail }} {{ i.mailID }} 
         </p>
         </div>
   </div>
@@ -76,7 +77,6 @@ export default class HelloWorld extends Vue {
   mounted() {
     this.members = this.$store.getters.getAllMembers;
   }
-
   computed() {
     this.members = this.$store.getters.getAllMembers;
   }

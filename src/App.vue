@@ -5,7 +5,8 @@
       <h2><router-link to="/">Team Members</router-link></h2>
       </div>
       <div id="smtg">
-      <router-link to="/invite"><input type="button" class="button" value="Invite Member"></router-link>
+      <router-link to="/invite">
+      <input type="button" class="button" value="Invite Member"></router-link>
       </div>
     </div>
     <router-view/>
@@ -67,7 +68,6 @@ export default class HelloWorld extends Vue {
   mounted() {
     this.members = this.$store.getters.getAllMembers;
   }
-
   computed() {
     this.members = this.$store.getters.getAllMembers;
   }
