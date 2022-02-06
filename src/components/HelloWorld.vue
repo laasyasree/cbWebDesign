@@ -7,7 +7,7 @@
         <input type="button" id="remove" @click='remove(index)' value="Remove">
        <router-link to="/edit">
        <input type="button" id="edit" @click="send(index)" value="Edit">
-       </router-link><br>{{ i.mail }} {{ i.mailID }} 
+       </router-link><br>{{ i.mail }} {{ i.mailID }}
         </p>
         </div>
   </div>
